@@ -26,8 +26,10 @@ pdf.options(height=10/2.54, width=10/2.54, family="GB1") # 注意：此设置要
   （1）准备工作：安装包并运行+读取数据
   ```{r}
   # 检查是否已安装 pacman
-  if (!requireNamespace("pacman", quietly = TRUE)) {
-   install.packages("pacman") }   # 如果未安装，则安装包
+  # 检查是否已安装 pacman包
+  if (!requireNamespace("pacman", quietly = TRUE)){
+      install.packages("pacman")
+                                }   # 如果未安装，则安装包
    #更简洁的代码可以是这样
 if (!require("pacman")) install.packages("pacman") 
 
